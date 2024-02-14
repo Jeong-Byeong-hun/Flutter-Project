@@ -1,9 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:toonflix/clone_ui.dart';
 import 'package:toonflix/widgets/button.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
 void main() {
-  runApp(App());
+  runApp(App1());
 }
 
 class App extends StatelessWidget {

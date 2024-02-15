@@ -1,10 +1,28 @@
 import 'package:flutter/material.dart';
-import 'package:toonflix/clone_ui.dart';
+import 'package:toonflix/screens/home_screen.dart';
 import 'package:toonflix/widgets/button.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
 void main() {
-  runApp(App1());
+  runApp(PomoTimerApp());
+}
+
+class PomoTimerApp extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      theme: ThemeData(
+        backgroundColor: Color(0xFFE7626C),
+        textTheme: TextTheme(
+          headline1: TextStyle(
+            color: Color(0xFF232B55),
+          ),
+        ),
+        cardColor: Color(0xFFF4EDDB),
+      ),
+      home: HomeScreen(),
+    );
+  }
 }
 
 class App extends StatelessWidget {

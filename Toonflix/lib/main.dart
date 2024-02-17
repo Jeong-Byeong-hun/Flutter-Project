@@ -1,10 +1,22 @@
 import 'package:flutter/material.dart';
 import 'package:toonflix/screens/home_screen.dart';
+import 'package:toonflix/toon_ui.dart';
 import 'package:toonflix/widgets/button.dart';
 import 'package:toonflix/widgets/currency_card.dart';
 
 void main() {
-  runApp(PomoTimerApp());
+  runApp(TodayToonApp());
+}
+
+class TodayToonApp extends StatelessWidget {
+  const TodayToonApp({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return MaterialApp(
+      home: TodayToonScreen(),
+    );
+  }
 }
 
 class PomoTimerApp extends StatelessWidget {
